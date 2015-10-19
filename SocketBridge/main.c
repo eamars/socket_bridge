@@ -208,6 +208,9 @@ void handle_request(int s, const char **argv)
     pthread_join(threads[0], NULL);
     pthread_join(threads[1], NULL);
     
+    // client disconnected
+    printf("Client disconnected\n");
+    
     return;
 }
 
